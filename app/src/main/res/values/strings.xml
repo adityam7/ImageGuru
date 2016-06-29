@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Image Guru</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="facebook_app_id">155240448226429</string>
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>
