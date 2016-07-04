@@ -4,5 +4,7 @@
 
     <string name="facebook_app_id">155240448226429</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_gallery">GalleryActivity</string>
+    <string name="title_activity_image">ImageActivity</string>
 
 </resources>

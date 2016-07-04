@@ -1,25 +1,26 @@
-package com.upgrad.imageguru.model;
+package com.upgrad.imageguru.model.tag;
 
-public class GalleryResponse {
-    private String status;
-
-    private Data data;
-
+/**
+ * Created by rachitgoyal on 6/29/16.
+ */
+public class TagResponse {
+    private int status;
+    private TagData data;
     private boolean success;
 
-    public String getStatus() {
+    public int getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(int status) {
         this.status = status;
     }
 
-    public Data getData() {
+    public TagData getData() {
         return data;
     }
 
-    public void setData(Data data) {
+    public void setData(TagData data) {
         this.data = data;
     }
 
@@ -33,7 +34,7 @@ public class GalleryResponse {
 
     @Override
     public String toString() {
-        return "GalleryResponse [status = " + status +
+        return "ClassPojo [status = " + status +
                 ", data = " + data +
                 ", success = " + success +
                 "]";

@@ -1,29 +1,20 @@
-package com.upgrad.imageguru.model;
+package com.upgrad.imageguru.model.gallery;
 
-public class Images {
+import java.io.Serializable;
+
+public class GalleryImage implements Serializable {
     private String id;
-
-    private String animated;
-
+    private boolean animated;
     private String title;
-
-    private String height;
-
-    private String views;
-
+    private int height;
+    private int views;
     private String description;
-
     private String link;
-
-    private String width;
-
+    private int width;
     private String type;
-
-    private String datetime;
-
+    private long datetime;
     private String bandwidth;
-
-    private String size;
+    private int size;
 
     public String getId() {
         return id;
@@ -33,11 +24,11 @@ public class Images {
         this.id = id;
     }
 
-    public String getAnimated() {
+    public boolean isAnimated() {
         return animated;
     }
 
-    public void setAnimated(String animated) {
+    public void setAnimated(boolean animated) {
         this.animated = animated;
     }
 
@@ -49,19 +40,19 @@ public class Images {
         this.title = title;
     }
 
-    public String getHeight() {
+    public int getHeight() {
         return height;
     }
 
-    public void setHeight(String height) {
+    public void setHeight(int height) {
         this.height = height;
     }
 
-    public String getViews() {
+    public int getViews() {
         return views;
     }
 
-    public void setViews(String views) {
+    public void setViews(int views) {
         this.views = views;
     }
 
@@ -81,11 +72,11 @@ public class Images {
         this.link = link;
     }
 
-    public String getWidth() {
+    public int getWidth() {
         return width;
     }
 
-    public void setWidth(String width) {
+    public void setWidth(int width) {
         this.width = width;
     }
 
@@ -97,11 +88,11 @@ public class Images {
         this.type = type;
     }
 
-    public String getDatetime() {
+    public long getDatetime() {
         return datetime;
     }
 
-    public void setDatetime(String datetime) {
+    public void setDatetime(long datetime) {
         this.datetime = datetime;
     }
 
@@ -113,17 +104,17 @@ public class Images {
         this.bandwidth = bandwidth;
     }
 
-    public String getSize() {
+    public int getSize() {
         return size;
     }
 
-    public void setSize(String size) {
+    public void setSize(int size) {
         this.size = size;
     }
 
     @Override
     public String toString() {
-        return "Images [id = " + id +
+        return "GalleryImage [id = " + id +
                 ", animated = " + animated +
                 ", title = " + title +
                 ", height = " + height +

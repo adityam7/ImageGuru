@@ -50,7 +50,7 @@ public class NetworkUtils {
                 }
             }
         }
-        aLog.w(TAG, "Data connectivity change detected, ping test=" + String.valueOf(reachable));
+        aLog.w(TAG, "GalleryData connectivity change detected, ping test=" + String.valueOf(reachable));
         return reachable;
     }
 }

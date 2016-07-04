@@ -8,7 +8,7 @@
     <application
         android:name=".ImageGuruApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -22,7 +22,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".activities.GalleryActivity"
+            android:label="@string/title_activity_gallery"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.upgrad.imageguru.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ImageActivity"
+            android:label="@string/title_activity_image"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.upgrad.imageguru.activities.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

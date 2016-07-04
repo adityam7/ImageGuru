@@ -1,44 +1,25 @@
-package com.upgrad.imageguru.model;
+package com.upgrad.imageguru.model.gallery;
 
-public class Data {
+public class GalleryData {
     private String comment_count;
-
     private String account_id;
-
     private String vote;
-
     private String link;
-
     private String score;
-
     private String privacy;
-
     private String id;
-
     private String title;
-
     private String cover;
-
     private String description;
-
     private String views;
-
     private String layout;
-
-    private Images[] images;
-
+    private GalleryImage[] images;
     private String downs;
-
     private String is_album;
-
     private String points;
-
     private String datetime;
-
     private String account_url;
-
     private String ups;
-
     private String images_count;
 
     public String getComment_count() {
@@ -137,11 +118,11 @@ public class Data {
         this.layout = layout;
     }
 
-    public Images[] getImages() {
+    public GalleryImage[] getImages() {
         return images;
     }
 
-    public void setImages(Images[] images) {
+    public void setImages(GalleryImage[] images) {
         this.images = images;
     }
 
@@ -203,7 +184,7 @@ public class Data {
 
     @Override
     public String toString() {
-        return "Data [comment_count = " + comment_count +
+        return "GalleryData [comment_count = " + comment_count +
                 ", account_id = " + account_id +
                 ", vote = " + vote +
                 ", link = " + link +
